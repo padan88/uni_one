@@ -1,0 +1,123 @@
+{
+
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "报表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/bench/bench",
+			"style": {
+				"navigationBarTitleText": "工作台",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/monitoring/monitoring",
+			"style": {
+				"navigationBarTitleText": "监控",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/statistical/statistical",
+			"style": {
+				"navigationBarTitleText": "统计",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/html/service",
+			"style": {
+				"navigationBarTitleText": "服务条款",
+				"app-plus": {
+					"titleNView": {
+						"type": "default",
+						"backgroundColor": "#2688DE",
+						"searchInput": {
+							"backgroundColor": "#66C6E8",
+							"borderRadius": "14px",
+							"placeholder": "输入产品名称或编码",
+							"placeholderColor": "#fff",
+							"align": "left",
+							"disabled": true //划重点！！！
+						}
+					}
+				}
+			}
+		}, {
+			"path": "pages/html/privacy",
+			"style": {
+				"navigationBarTitleText": "隐私声明"
+			}
+		}, {
+			"path": "pages/404/404",
+			"style": {
+				"navigationBarTitleText": "404"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "myapp",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/icon_bottom_normal_01.png",
+				"selectedIconPath": "static/tabbar/icon_bottom_press_01.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/report/report",
+				"iconPath": "static/tabbar/icon_bottom_normal_02.png",
+				"selectedIconPath": "static/tabbar/icon_bottom_press_02.png",
+				"text": "报表"
+			},
+			{
+				"pagePath": "pages/bench/bench",
+				"iconPath": "static/tabbar/icon_bottom_normal_03.png",
+				"selectedIconPath": "static/tabbar/icon_bottom_press_03.png",
+				"text": "工作台"
+			},
+			{
+				"pagePath": "pages/monitoring/monitoring",
+				"iconPath": "static/tabbar/icon_bottom_normal_04.png",
+				"selectedIconPath": "static/tabbar/icon_bottom_press_04.png",
+				"text": "监测"
+			},
+			{
+				"pagePath": "pages/statistical/statistical",
+				"iconPath": "static/tabbar/icon_bottom_normal_05.png",
+				"selectedIconPath": "static/tabbar/icon_bottom_press_05.png",
+				"text": "统计"
+			}
+		]
+	}
+}
